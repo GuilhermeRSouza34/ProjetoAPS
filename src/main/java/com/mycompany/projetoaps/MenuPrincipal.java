@@ -28,19 +28,84 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jPerfil = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jCursos = new javax.swing.JMenu();
+        jMeusCursos = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jConfigurações = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Guilherme\\OneDrive\\Imagens\\Simple Background Images for Website - pngmagic.png")); // NOI18N
         jLabel1.setText("Cadastro");
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        jPerfil.setText("Perfil");
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        jMenuItem1.setText("Editar Perfil");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jPerfil.add(jMenuItem1);
+
+        jMenuItem9.setText("Minha Biblioteca");
+        jPerfil.add(jMenuItem9);
+
+        jMenuBar1.add(jPerfil);
+
+        jCursos.setText("Cursos");
+
+        jMeusCursos.setText("Meus Cursos");
+        jMeusCursos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMeusCursosActionPerformed(evt);
+            }
+        });
+        jCursos.add(jMeusCursos);
+
+        jMenuItem2.setText("Cursos sugeridos");
+        jCursos.add(jMenuItem2);
+
+        jMenuItem4.setText("Aulas AO VIVO");
+        jCursos.add(jMenuItem4);
+
+        jMenuItem5.setText("Trabalhos");
+        jCursos.add(jMenuItem5);
+
+        jMenuItem6.setText("Biblioteca");
+        jCursos.add(jMenuItem6);
+
+        jMenuItem10.setText("Calendario");
+        jCursos.add(jMenuItem10);
+
+        jMenuBar1.add(jCursos);
+
+        jConfigurações.setText("Configurações");
+
+        jMenu1.setText("Suporte ao aluno");
+        jConfigurações.add(jMenu1);
+
+        jMenuItem3.setText("Documentos do Aluno");
+        jConfigurações.add(jMenuItem3);
+
+        jMenuItem7.setText("Carteirinha");
+        jConfigurações.add(jMenuItem7);
+
+        jMenuItem8.setText("Secretaria On-line");
+        jConfigurações.add(jMenuItem8);
+
+        jMenuBar1.add(jConfigurações);
 
         setJMenuBar(jMenuBar1);
 
@@ -61,6 +126,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMeusCursosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMeusCursosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMeusCursosActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -98,9 +171,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jConfigurações;
+    private javax.swing.JMenu jCursos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem jMeusCursos;
+    private javax.swing.JMenu jPerfil;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,9 +32,8 @@ public class Login extends javax.swing.JFrame {
         senhaLogin = new javax.swing.JPasswordField();
         usuarioLogin = new javax.swing.JTextField();
         campoUsuario = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         campoSenha = new javax.swing.JLabel();
         painelMenu = new javax.swing.JLabel();
         fundoTelaLogin = new javax.swing.JLabel();
@@ -56,28 +55,19 @@ public class Login extends javax.swing.JFrame {
                 senhaLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(senhaLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 520, 270, 40));
+        getContentPane().add(senhaLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 290, 30));
 
         usuarioLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usuarioLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(usuarioLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, 270, 40));
+        getContentPane().add(usuarioLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 420, 290, 30));
 
         campoUsuario.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         campoUsuario.setForeground(new java.awt.Color(255, 255, 255));
         campoUsuario.setText("Usuario");
         getContentPane().add(campoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, -1, -1));
-
-        jScrollPane1.setToolTipText("Se não possui cadastro, clique no botão cadastrar");
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Se não possui cadastro, clique no botão a baixo");
-        jScrollPane1.setViewportView(jTextArea1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 590, 270, 30));
 
         jButton1.setText("Cadastro");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,6 +76,15 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 630, 120, 20));
+
+        jTextField1.setEditable(false);
+        jTextField1.setText("   Se não possui cadastro, clique no botão a baixo");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 590, 270, -1));
 
         campoSenha.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         campoSenha.setForeground(new java.awt.Color(255, 255, 255));
@@ -112,6 +111,10 @@ public class Login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,8 +159,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel painelMenu;
     private javax.swing.JPasswordField senhaLogin;
     private javax.swing.JTextField usuarioLogin;

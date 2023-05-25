@@ -44,6 +44,10 @@ public class TelaCadastro extends javax.swing.JFrame {
         usuarioLogin4 = new javax.swing.JTextField();
         usuarioLogin5 = new javax.swing.JTextField();
         usuarioLogin6 = new javax.swing.JTextField();
+        usuarioLogin9 = new javax.swing.JTextField();
+        campoUsuario8 = new javax.swing.JLabel();
+        campoUsuario9 = new javax.swing.JLabel();
+        usuarioLogin8 = new javax.swing.JTextField();
         campoUsuario2 = new javax.swing.JLabel();
         campoUsuario5 = new javax.swing.JLabel();
         painelMenu = new javax.swing.JLabel();
@@ -92,15 +96,20 @@ public class TelaCadastro extends javax.swing.JFrame {
         campoUsuario6.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         campoUsuario6.setForeground(new java.awt.Color(255, 255, 255));
         campoUsuario6.setText("Cidade:");
-        getContentPane().add(campoUsuario6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, 110, 20));
+        getContentPane().add(campoUsuario6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, 70, 20));
 
         campoUsuario7.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         campoUsuario7.setForeground(new java.awt.Color(255, 255, 255));
-        campoUsuario7.setText("Codigo:");
-        getContentPane().add(campoUsuario7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 560, 130, 20));
+        campoUsuario7.setText("Senha:");
+        getContentPane().add(campoUsuario7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 600, 60, 20));
 
         jButton1.setText("Cadastrar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 590, 110, 30));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 670, 110, 30));
 
         usuarioLogin1.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
         usuarioLogin1.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +133,7 @@ public class TelaCadastro extends javax.swing.JFrame {
                 usuarioLogin7ActionPerformed(evt);
             }
         });
-        getContentPane().add(usuarioLogin7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 560, 400, 20));
+        getContentPane().add(usuarioLogin7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 600, 320, 20));
 
         usuarioLogin3.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
         usuarioLogin3.addActionListener(new java.awt.event.ActionListener() {
@@ -158,10 +167,36 @@ public class TelaCadastro extends javax.swing.JFrame {
         });
         getContentPane().add(usuarioLogin6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 320, 20));
 
+        usuarioLogin9.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
+        usuarioLogin9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioLogin9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(usuarioLogin9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 630, 320, 20));
+
+        campoUsuario8.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        campoUsuario8.setForeground(new java.awt.Color(255, 255, 255));
+        campoUsuario8.setText("Confirme a Senha:");
+        getContentPane().add(campoUsuario8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 630, -1, 20));
+
+        campoUsuario9.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        campoUsuario9.setForeground(new java.awt.Color(255, 255, 255));
+        campoUsuario9.setText("Usuario:");
+        getContentPane().add(campoUsuario9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, 80, 20));
+
+        usuarioLogin8.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
+        usuarioLogin8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioLogin8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(usuarioLogin8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 570, 320, 20));
+
         campoUsuario2.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         campoUsuario2.setForeground(new java.awt.Color(255, 255, 255));
         campoUsuario2.setText("Estado:");
-        getContentPane().add(campoUsuario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 510, 130, 20));
+        getContentPane().add(campoUsuario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 510, 70, 20));
 
         campoUsuario5.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         campoUsuario5.setForeground(new java.awt.Color(255, 255, 255));
@@ -209,6 +244,18 @@ public class TelaCadastro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usuarioLogin7ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void usuarioLogin8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioLogin8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuarioLogin8ActionPerformed
+
+    private void usuarioLogin9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioLogin9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuarioLogin9ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -255,6 +302,8 @@ public class TelaCadastro extends javax.swing.JFrame {
     private javax.swing.JLabel campoUsuario5;
     private javax.swing.JLabel campoUsuario6;
     private javax.swing.JLabel campoUsuario7;
+    private javax.swing.JLabel campoUsuario8;
+    private javax.swing.JLabel campoUsuario9;
     private javax.swing.JLabel fundoTelaLogin;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel4;
@@ -268,5 +317,7 @@ public class TelaCadastro extends javax.swing.JFrame {
     private javax.swing.JTextField usuarioLogin5;
     private javax.swing.JTextField usuarioLogin6;
     private javax.swing.JTextField usuarioLogin7;
+    private javax.swing.JTextField usuarioLogin8;
+    private javax.swing.JTextField usuarioLogin9;
     // End of variables declaration//GEN-END:variables
 }
